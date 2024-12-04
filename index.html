@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controle de Cadeados</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Controle de Cadeados</h1>
+    <div>
+      <div class="form-group">
+        <label for="numeroCadeado">Número </label>
+        <input type="text" id="numeroCadeado" />
+      </div>
+      <div class="form-group">
+        <label for="bcColaborador">BC </label>
+        <input type="text" id="bcColaborador" />
+      </div>
+      <div class="form-group">
+        <label for="nomeColaborador">Nome </label>
+        <input type="text" id="nomeColaborador" />
+      </div>
+      <button onclick="adicionarRegistro()">Adicionar Registro</button>
+      <button onclick="baixarPlanilha()" id="baixarBtn" disabled>
+        Baixar Planilha
+      </button>
+    </div>
+    <table id="tabela">
+      <thead>
+        <tr>
+          <th>Número</th>
+          <th>BC <r</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="xlsx.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+  </body>
+</html>
